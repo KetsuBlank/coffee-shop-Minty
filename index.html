@@ -132,24 +132,26 @@
     }
 
     .image-block::before {
-  content: '';
-  position: absolute;
-  width: 65%;
-  height: 70%;
-  top: 15%;
-  left: 17.5%;
-  pointer-events: none;
+      content: '';
+      position: absolute;
+      width: 65%;
+      height: 70%;
+      top: 15%;
+      left: 17.5%;
+      pointer-events: none;
     } 
 
     .image-block p {
-  width: 40%;
-  max-height: 65%;
-  margin: 0;
-  padding: 30px;
-  text-align: center;
-  overflow-y: auto;
-  font-size: 1.1rem;
-  line-height: 1.5;
+      width: 70%;
+      max-height: 75%;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      overflow-y: auto;
+      font-size: clamp(14px, 2.5vw, 18px); /* АДАПТИВНЫЙ размер */
+      line-height: 1.6;
+      word-wrap: break-word; /* ПРАВИЛЬНЫЕ переносы */
+      hyphens: auto; /* АВТОМАТИЧЕСКИЕ переносы слов */
     }
 
     .menu-grid {
@@ -296,11 +298,11 @@
         font-size: 1.8rem;
       }
       .image-block p {
-        width: 90% !important;
-        max-height: 80% !important;
-        padding: 15px !important;
-        font-size: 0.9rem !important;
-        line-height: 1.4 !important;
+        width: 85% !important;
+    max-height: 80% !important;
+    padding: 15px !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
       }
       nav {
         display: flex;
@@ -313,9 +315,9 @@
       }
       
       .image-block {
-        min-height: 250px !important;
-        padding: 20px 15px !important;
-        background-size: cover !important;
+        min-height: 300px;
+        padding: 25px 15px;
+        background-size: contain;
       }
       
       .menu-grid {
@@ -323,8 +325,8 @@
       }
       .image-block::before {
         width: 90% !important;
-        height: 80% !important;
-        top: 10% !important;
+        height: 75% !important;
+        top: 12% !important;
         left: 5% !important;
       }
     }
@@ -452,3 +454,4 @@
 </body>
 
 </html>
+
